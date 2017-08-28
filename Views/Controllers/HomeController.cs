@@ -10,14 +10,8 @@ namespace Views.Controllers
     {
         public ActionResult Index()
         {
-            ViewBag.Message = "Helo, World";
-            ViewBag.Time = DateTime.Now.ToShortTimeString();
-            return View("DebugData");
-        }
-
-        public ActionResult List()
-        {
-            return View();
+            string[] names = { "Apple", "Orange", "Pear" };
+            return View(names);
         }
     }
 }
