@@ -15,7 +15,8 @@ namespace Views
             AreaRegistration.RegisterAllAreas();
             RouteConfig.RegisterRoutes(RouteTable.Routes);
 
-            ViewEngines.Engines.Add(new DebugDataViewEngine());
+            ViewEngines.Engines.Clear();
+            ViewEngines.Engines.Add(new CustomLocationViewEngine());
         }
     }
 }
